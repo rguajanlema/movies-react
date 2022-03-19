@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "./index.css";
 
 //props el parametro de entrada
 //otra de obtener el contenido
@@ -13,7 +14,7 @@ function Contenido({ titulo, children }) {
 }
 
 ReactDOM.render(
-    //pasamos contenidos children como si fuera una variable
+  //pasamos contenidos children como si fuera una variable
   <Contenido titulo="Titulo 1">Hola desde React</Contenido>,
   document.getElementById("root")
 );
