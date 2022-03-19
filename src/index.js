@@ -5,8 +5,10 @@ import ReactDOM from "react-dom";
 function Contenido(props) {
   //imprimimos el objeto props
   console.log(props);
-  const titulo = props.titulo;
-  const contenido = props.contenido;
+  //const titulo = props.titulo;
+  //const contenido = props.contenido;
+
+  const { titulo, contenido } = props;
 
   return (
     <div>
