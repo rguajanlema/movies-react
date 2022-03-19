@@ -2,13 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 //props el parametro de entrada
-function Contenido(props) {
+function Contenido({ titulo, contenido }) {
   //imprimimos el objeto props
-  console.log(props);
   //const titulo = props.titulo;
   //const contenido = props.contenido;
 
-  const { titulo, contenido } = props;
+  //const { titulo, contenido } = props;
 
   return (
     <div>
