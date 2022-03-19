@@ -1,9 +1,12 @@
+import movies from "./movies.json";
+
 export function MoviesGrid() {
+  //creamos una funcion javascript para recorrer el json
   return (
     <ul>
-      <li>Peli1</li>
-      <li>Peli2</li>
-      <li>Peli3</li>
+      {movies.map(function (movie) {
+        return <li>{movie.title}</li>;
+      })}
     </ul>
   );
 }
