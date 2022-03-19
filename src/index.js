@@ -2,26 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 //props el parametro de entrada
-function Contenido({ titulo, contenido }) {
-  //imprimimos el objeto props
-  //const titulo = props.titulo;
-  //const contenido = props.contenido;
-
-  //const { titulo, contenido } = props;
-
+//otra de obtener el contenido
+function Contenido({ titulo, children }) {
   return (
     <div>
       <h1>{titulo}</h1>
-      <div>{contenido}</div>
+      <div>{children}</div>
     </div>
   );
 }
 
 ReactDOM.render(
-  <Contenido titulo="Titulo" contenido="Hola desde React" />,
+    //pasamos contenidos children como si fuera una variable
+  <Contenido titulo="Titulo 1">Hola desde React</Contenido>,
   document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
