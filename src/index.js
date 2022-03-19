@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+//props el parametro de entrada
 function Contenido(props) {
+  //imprimimos el objeto props
   console.log(props);
 
   return (
