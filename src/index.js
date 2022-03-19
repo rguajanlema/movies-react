@@ -8,8 +8,8 @@ function Contenido(props) {
 
   return (
     <div>
-      <h1>Titulo</h1>
-      <div>Hola desde React</div>
+      <h1>{props.titulo}</h1>
+      <div>{props.contenido}</div>
     </div>
   );
 }
