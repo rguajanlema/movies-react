@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-function Contenido() {
+function Contenido(props) {
+  console.log(props);
+
   return (
     <div>
       <h1>Titulo</h1>
